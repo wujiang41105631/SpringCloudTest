@@ -1,0 +1,12 @@
+server:
+  port: 9001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.255.72.216:10086/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: RiskService-SayHello
+

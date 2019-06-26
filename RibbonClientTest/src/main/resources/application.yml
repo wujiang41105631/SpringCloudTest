@@ -1,0 +1,11 @@
+server:
+  port: 8002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.255.72.216:10086/eureka/
+spring:
+  application:
+    name: ribbon-client
+logging:
+  config: classpath:logback.xml
