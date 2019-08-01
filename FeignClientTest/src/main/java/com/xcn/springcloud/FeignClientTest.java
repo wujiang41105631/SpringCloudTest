@@ -23,9 +23,9 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 @EnableFeignClients
 @EnableHystrixDashboard
-@EnableCircuitBreaker
+@EnableCircuitBreaker //启动断路器
 @EnableHystrix
-@EnableTurbine
+@EnableTurbine // hystrix 监控工具
 public class FeignClientTest {
 
     public static void main(String[] args) {
