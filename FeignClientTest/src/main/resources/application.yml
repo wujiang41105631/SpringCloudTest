@@ -18,6 +18,9 @@ feign:
       mime-types: text/xml,application/xml,application/json
     response:
       enabled: true
+  okhttp:
+    enabled: true
+
 turbine:
   app-config: feign-client # 配置Eureka中的serviceId列表，表明监控哪些服务
   aggregator:
@@ -46,5 +49,3 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 1000 #断路器超时时间，默认1000ms
-
-feign.hystrix.enabled: true

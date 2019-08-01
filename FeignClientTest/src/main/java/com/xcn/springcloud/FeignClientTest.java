@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Bean;
 @EnableDiscoveryClient
 @EnableEurekaClient
 @SpringBootApplication
-@EnableFeignClients
+@EnableFeignClients // 有defaultConfiguration属性.
 @EnableHystrixDashboard
 @EnableCircuitBreaker //启动断路器
 @EnableHystrix

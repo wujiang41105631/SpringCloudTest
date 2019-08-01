@@ -18,4 +18,9 @@ public class ErrorService implements SayHiService {
     public String sayHiHome(String name) {
         return "{\"code\":4000,\"msg\":\"sayHiHome error msg\"}";
     }
+
+    @Override
+    public String timeOut(String name, Integer age) {
+        return "{\"code\":4000,\"msg\":\"timeOut error msg\"}";
+    }
 }
